@@ -1,0 +1,11 @@
+body {
+    background: lavender;
+}
+form {
+    padding: 2em;
+    align-content: center;
+    text-align: center;
+}
+button {
+    background: lightseagreen;
+}

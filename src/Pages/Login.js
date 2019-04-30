@@ -1,34 +1,36 @@
-import React, { Component } from 'react';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import {Link} from 'react-router-dom'
+import "./styles.css";
 
-
-
-class Login extends Component {
-  render(){
-return <Form>
-  <Form.Group controlId="formBasicEmail">
-    <Form.Label>Email address</Form.Label>
-    <Form.Control type="email" placeholder="Enter email" />
-    <Form.Text className="text-muted">
-      
-    </Form.Text>
-  </Form.Group>
-
-  <Form.Group controlId="formBasicPassword">
-    <Form.Label>Password</Form.Label>
-    <Form.Control type="password" placeholder="Password" />
-  </Form.Group>
+export default () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   
-  <Button variant="primary" type="submit">
-    Login
-  </Button>
-
+return (
+    <form>
+      <input
+        value={email}
+        onChange={e => setEmail(e.target.value)}
+        placeholder="Email address"
+        type="email"
+        name="email"
+        required
+      />
+      <br />
+      <input
+        value={password}
+        onChange={e => setPassword(e.target.value)}
+        placeholder="Password"
+        type="password"
+        name="password"
+        required
+      />
+      <br />
+<button type="submit">Login</button>
+<br />
   <Link to="/register">Not Signed Up?</Link>
-</Form>}
+</form>
 
+);
+}
 
-};
-
-export default Login;
