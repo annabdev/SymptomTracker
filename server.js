@@ -2,6 +2,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const app = express();
+
+
 // Bodyparser middleware
 app.use(
   bodyParser.urlencoded({
@@ -9,8 +11,10 @@ app.use(
   })
 );
 app.use(bodyParser.json());
+
 // DB Config
 const db = require("./src/config/keys").mongoURI;
+
 // Connect to MongoDB
 mongoose
   .connect(

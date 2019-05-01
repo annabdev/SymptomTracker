@@ -2,7 +2,7 @@ Symptom tracker app see: Mindmap and Journal dated 4-29-2019
 using express, css Bootstrap and MongoDB
 
 breaking when attempting to connect to server and DB
-
+FIXED by putting the server file on the same level as the src file
 Error Code:
 
 Cannot find module '/Users/annabeagley/Helio/Projects/symptom-tracker/server.js'
