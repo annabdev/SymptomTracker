@@ -3,10 +3,6 @@ using express, css Bootstrap and MongoDB
 
 breaking when attempting to connect to server and DB
 FIXED by putting the server file on the same level as the src file
-Error Code:
 
-Cannot find module '/Users/annabeagley/Helio/Projects/symptom-tracker/server.js'
-    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:649:15)
-    at Function.Module._load (internal/modules/cjs/loader.js:575:25)
-    at Function.Module.runMain (internal/modules/cjs/loader.js:862:12)
-    at internal/main/run_main_module.js:21:11
+
+moved server to different project to keep things cleaner
